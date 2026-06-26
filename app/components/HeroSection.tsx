@@ -3,11 +3,11 @@ import Reveal from "./reveal";
 
 export default function HeroSection() {
   return (
-    <Block className="mt-4 grid gap-4 md:grid-cols-2">
+    <Block className="mt-4 grid gap-4">
       <div className="">
         <Reveal>
           <h1 className="text-6xl font-black capitalize">
-            Hey, I&apos;m clement.
+            Hey, I&apos;m clement<span className="text-amber-500">.</span>
           </h1>
         </Reveal>
         <Reveal>
@@ -34,7 +34,6 @@ export default function HeroSection() {
           </a>
         </Reveal>
       </div>
-      <div className="w-full"></div>
     </Block>
   );
 }

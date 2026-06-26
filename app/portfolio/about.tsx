@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div>
       <HeaderSection className="" title="About" />
-      <Block>
+      <Block className="grid items-center justify-center gap-4 md:grid-cols-2">
         <Reveal>
-          <p className="line-clamp-3 text-[18px]">
+          <p className="text-[18px] break-all">
             I am Clement Apary, a passionate Web Developer, Graphic Designer,
             and Freelancer based in Juba, South Sudan. I specialize in building
             modern, responsive, and user-friendly digital solutions that help

@@ -1,18 +1,22 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
 import About from "./portfolio/about";
-import Experinces from "./portfolio/experinces";
 import Projects from "./portfolio/projects";
-import Services from "./portfolio/services";
+import ServicesPage from "./portfolio/services";
+import ExperincesPage from "./portfolio/experinces";
+import ToggleTheme from "./components/toggleTheme";
 
 export default function HomePage() {
   return (
     <div className="">
+      <div className="">
+        <ToggleTheme />
+      </div>
       <HeroSection />
       <About />
-      <Services />
+      <ServicesPage />
       <Projects />
-      <Experinces />
+      <ExperincesPage />
     </div>
   );
 }

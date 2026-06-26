@@ -14,7 +14,10 @@ export default function HeaderSection({
         className,
       )}
     >
-      <h2 className="text-4xl font-black">{title}.</h2>
+      <h2 className="text-4xl font-black">
+        {title}
+        <span className="text-amber-500">.</span>
+      </h2>
       <div className="h-0.5 w-full rounded-full bg-zinc-400"></div>
     </div>
   );
