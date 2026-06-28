@@ -1,26 +1,31 @@
 import Reveal from "../components/reveal";
 import Block from "../components/block";
 import HeaderSection from "../components/header-section";
+import { Project } from "@/lib/constants";
+import Feature from "@/public/project.png";
+import Image from "next/image";
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <div>
       <HeaderSection className="flex-row" title="Projects" />
-      <Block>
-        <Reveal>
-          <p className="line-clamp-3 text-[18px]">
-            I am Clement Apary, a passionate Web Developer, Graphic Designer,
-            and Freelancer based in Juba, South Sudan. I specialize in building
-            modern, responsive, and user-friendly digital solutions that help
-            individuals, businesses, and organizations improve their online
-            presence. With a Bachelor Degree in Information Technology, I
-            combine technical skills, creativity, and problem-solving abilities
-            to create effective websites, applications, and visual designs. I
-            enjoy transforming ideas into real digital products through clean
-            code, attractive designs, and innovative technology solutions.
-          </p>
-        </Reveal>
-      </Block>
+      <div className="grid gap-4 md:grid-cols-2">
+        {Project.map((project) => (
+          <Block key={project.title}>
+            <Reveal>
+              <div className="aspect-square">
+                <Image src={Feature} alt="feature" />
+              </div>
+            </Reveal>
+            <Reveal>
+              <h1 className="text-2xl font-bold">{project.title}</h1>
+            </Reveal>
+            <Reveal>
+              <p className="text-[18px]">{project.body}</p>
+            </Reveal>
+          </Block>
+        ))}
+      </div>
     </div>
   );
 }

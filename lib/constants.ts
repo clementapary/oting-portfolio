@@ -103,3 +103,18 @@ export const Skills = [
     ],
   },
 ];
+
+export const Project = [
+  {
+    title: "E-Commerce Platform",
+    body: "A modern online shopping platform with product management, user authentication, and secure transactions.",
+  },
+  {
+    title: "Digital Wallet System",
+    body: "A financial technology application concept with wallet management, transfers, and transaction tracking.",
+  },
+  {
+    title: "Business Website Projects",
+    body: "Developed responsive websites for businesses and personal brands.",
+  },
+];

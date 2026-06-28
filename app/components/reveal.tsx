@@ -42,8 +42,12 @@ export default function Reveal({
       </motion.div>
       <motion.div
         variants={{
-          hidden: { left: 0 },
-          visible: { left: "100%" },
+          hidden: {
+            left: 0,
+          },
+          visible: {
+            left: "100%",
+          },
         }}
         initial="hidden"
         animate={slideControles}

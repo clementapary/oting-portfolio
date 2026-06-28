@@ -1,14 +1,23 @@
 import Reveal from "../components/reveal";
 import Block from "../components/block";
 import HeaderSection from "../components/header-section";
+import Image from "next/image";
+import Profile from "@/public/key.png";
 
 export default function About() {
   return (
     <div>
       <HeaderSection className="" title="About" />
-      <Block className="grid items-center justify-center gap-4 md:grid-cols-2">
+      <Block className="grid items-center justify-end gap-4 md:grid-cols-2">
         <Reveal>
-          <p className="text-[18px] break-all">
+          <Image
+            src={Profile}
+            alt="profile"
+            className="w-fit self-end rounded-lg object-cover"
+          />
+        </Reveal>
+        <Reveal>
+          <p className="text-xl">
             I am Clement Apary, a passionate Web Developer, Graphic Designer,
             and Freelancer based in Juba, South Sudan. I specialize in building
             modern, responsive, and user-friendly digital solutions that help
