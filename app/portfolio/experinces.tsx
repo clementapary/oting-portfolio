@@ -18,13 +18,15 @@ export default function ExperincesPage() {
           <Reveal>
             <p className="line-clamp-3 text-lg font-thin">{experince.body}</p>
           </Reveal>
-          {experince.work.map((experince) => (
-            <Reveal key={experince.title}>
-              <p className="line-clamp-3 flex items-center gap-2 text-lg font-semibold">
-                <CheckCircle /> {experince.title}
-              </p>
-            </Reveal>
-          ))}
+          <div className="grid gap-4 md:grid-cols-2">
+            {experince.work.map((experince) => (
+              <Reveal key={experince.title}>
+                <p className="line-clamp-3 flex items-center gap-2 text-lg font-semibold">
+                  <CheckCircle /> {experince.title}
+                </p>
+              </Reveal>
+            ))}
+          </div>
         </Block>
       ))}
     </div>

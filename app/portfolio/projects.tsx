@@ -9,7 +9,7 @@ export default function ProjectsPage() {
   return (
     <div>
       <HeaderSection className="flex-row" title="Projects" />
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-3">
         {Project.map((project) => (
           <Block key={project.title}>
             <Reveal>

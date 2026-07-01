@@ -15,13 +15,15 @@ export default function ServicesPage() {
           <Reveal>
             <p className="line-clamp-3 text-lg font-thin">{service.body}</p>
           </Reveal>
-          {service.services.map((service) => (
-            <Reveal key={service.title}>
-              <p className="line-clamp-3 flex items-center gap-2 text-lg font-semibold">
-                <CheckCircle /> {service.title}
-              </p>
-            </Reveal>
-          ))}
+          <div className="grid gap-2 md:grid-cols-3">
+            {service.services.map((service) => (
+              <Reveal key={service.title}>
+                <p className="line-clamp-3 flex items-center gap-2 text-lg font-semibold">
+                  <CheckCircle /> {service.title}
+                </p>
+              </Reveal>
+            ))}
+          </div>
         </Block>
       ))}
     </div>

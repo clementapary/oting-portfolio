@@ -18,7 +18,7 @@ export default function HeaderSection({
         {title}
         <span className="text-amber-500">.</span>
       </h2>
-      <div className="h-0.5 w-full rounded-full border-b border-zinc-100"></div>
+      <div className="h-0.5 w-full rounded-full border-b dark:border-zinc-100"></div>
     </div>
   );
 }
