@@ -21,7 +21,7 @@ export default function ProjectsPage() {
               <h1 className="text-2xl font-bold">{project.title}</h1>
             </Reveal>
             <Reveal>
-              <p className="text-[18px]">{project.body}</p>
+              <p className="text-lg font-thin">{project.body}</p>
             </Reveal>
           </Block>
         ))}
